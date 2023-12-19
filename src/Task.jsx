@@ -1,8 +1,7 @@
-import React, { useContext } from "react";
-import { TaskContext } from "./TaskContext";
-
+import { useContext } from "react";
+import {TaskPovider} from "react"
 const Task = ({ task }) => {
-  const { updateTask, deleteTask } = useContext(TaskContext);
+  const { updateTask, deleteTask } = useContext(TaskPovider);
 
   const handleCheck = () => {
     updateTask({ ...task, isDone: !task.isDone });

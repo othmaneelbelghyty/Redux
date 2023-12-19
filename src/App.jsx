@@ -1,11 +1,11 @@
 import React from "react";
-import { TaskProvider } from "./TaskContext";
+import { TaskProvider,useTasks, Task } from "./TaskContext";
 import AddTask from "./AddTask";
 import ListTask from "./ListTask";
 
 const App = () => {
   return (
-    <TaskProvider>
+    <TaskProvider >
       <h1>To-Do List</h1>
       <AddTask />
       <ListTask />
